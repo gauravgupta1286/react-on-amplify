@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={fetchEmployees}>Fetch Employees</button>
+      
       <table>
         <thead>
           <tr>
@@ -29,7 +29,7 @@ function App() {
         <tbody>
           {employeeData.map((employee) => (
             <tr key={employee.empid}>
-              <td>{employee.empid}</td>
+              <td>{employee.empId}</td>
               <td>{employee.emp_Name}</td>
               <td>{employee.designation}</td>
               <td>{employee.salary}</td>
@@ -37,6 +37,10 @@ function App() {
           ))}
         </tbody>
       </table>
+      <div>
+      <p>&nbsp;</p>
+      <button onClick={fetchEmployees}>Fetch Employees</button>
+      </div>
     </div>
   );
 }
