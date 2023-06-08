@@ -36,7 +36,7 @@ function App() {
     } catch (error) {
       console.error('Error fetching employees:', error);
     }
-    
+
   }catch (error) {
     console.error(error);
   }
@@ -120,7 +120,7 @@ function App() {
               </tbody>
             </table>
             <p>&nbsp;</p>
-            <button className="buttonPos" onClick={fetchEmployees}>Fetch Employees</button>
+            <button className="buttonPos" onClick={fetchEmployees}>FETCH Emp</button>
         </div>
     </div>
   );
