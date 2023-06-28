@@ -133,7 +133,7 @@ const updateData = (empid) => {
                 <div className="grid-child green">
                   <div className="employee-list">
                         <table className='tableClass'>
-                          <thead>
+                          <thead >
                             <tr>
                               <th> EID </th>
                               <th>Name</th>

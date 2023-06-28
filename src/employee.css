@@ -130,13 +130,10 @@
   .tableClass{
     background-color: #ccc;
     width: 650px;
+    border-collapse: collapse;
   }
 
-  .tableClass thead {
-    position: sticky;
-    top: 0;
-    background-color: #3c81e8;
-  }
+ 
 
   .tableClass th:nth-child(1),
 .tableClass td:nth-child(1) {
@@ -157,7 +154,28 @@
     padding: 0px; /* Set the desired width for column 1 */
     border: none;
   }
+
   
+  
+  .tableClass th {
+    background-color: #f2f2f2;
+    /* Set header background color */
+  }
+  
+  .tableClass tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Set alternate row color */
+  }
+  
+  .tableClass tbody tr:hover {
+    background-color: #e5e5e5;
+    /* Set hover row color */
+  }
+  .tableClass thead th{
+    position: sticky;
+    top: 0;
+    background-color: #3c81e8;
+  }
   
   .employee-list div {
     margin-bottom: 5px;
@@ -183,7 +201,8 @@
 
   }
    .deleteButton{
-    background-color: rgb(204, 42, 42);
+    
+    background-color: #ff0000; /* Set the desired hover background color */
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -194,11 +213,11 @@
   
   }
   .deleteButton:hover {
-    background-color: #ff0000; /* Set the desired hover background color */
+    background-color: rgb(204, 42, 42);
   }
 
   .updateButton{
-    background-color: rgb(186, 186, 14);
+    background-color: yellow; /* Set the desired hover background color */
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -209,6 +228,7 @@
   }
 
   .updateButton:hover {
-    background-color: yellow; /* Set the desired hover background color */
+    background-color: rgb(186, 186, 14);
+    
   }
   
