@@ -1,0 +1,214 @@
+.employee-form {
+    max-width: 500px;
+    margin: 5px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  .grid-child{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+  .employee-form h2 {
+    text-align: center;
+  }
+  
+  .employee-form .form-group {
+    margin-bottom: 10px;
+    display: flex;
+     flex-direction: row; 
+     justify-content: left; 
+     align-items: left;
+  }
+  
+  .employee-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+    
+  }
+  
+  .employee-form input[type='text'],
+  .employee-form input[type='email'] {
+    width: 250px;
+    padding-right: 2px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: auto; 
+    border-color: #fff;
+    
+  }
+
+  .ButtonPositionDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* Adjust the height of the container as needed */
+  
+
+  }
+
+  .topHeader {
+    background-color:#ccc;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: black;
+    border: solid;
+  }
+  .topHeader:hover{
+    background-color:#bcb4b4;
+  }
+  
+  .topHeader h1 {
+    color: black;
+    font-size: 29px;
+    text-align: center;
+  }
+  .topHeader h1:hover {
+    color: black;
+    font-size: 29px;
+    font-weight: 1000;
+    
+    text-align: center;
+  }
+  
+  
+  .addEmpButton {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #256c28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .addEmpButton:hover{
+    background-color: rgb(18, 192, 18); /* Set the desired hover background color */
+  }
+
+  .operation {
+    text-align: center;
+  }
+  
+  
+  .employee-list {
+    margin-top: 15px;
+    overflow-y: auto;
+    width: 700px; /* Set the desired width */
+    height: 270px; /* Set the desired height */
+    margin-left: 40px;
+  }
+  
+  .employee-list h2 {
+    text-align: center;
+  }
+  
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .employee-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+  }
+  .tableClass{
+    background-color: #ccc;
+    width: 650px;
+  }
+
+  .tableClass thead {
+    position: sticky;
+    top: 0;
+    background-color: #3c81e8;
+  }
+
+  .tableClass th:nth-child(1),
+.tableClass td:nth-child(1) {
+  width: 5px /* Set the desired width for column 1 */
+}
+
+.tableClass th:nth-child(2),
+.tableClass td:nth-child(2) {
+  width: 150px; /* Set the desired width for column 1 */
+}
+
+.tableClass td:nth-child(5) {
+  padding: 0px; /* Set the desired width for column 1 */
+  border: none;
+}
+
+.tableClass td:nth-child(6) {
+    padding: 0px; /* Set the desired width for column 1 */
+    border: none;
+  }
+  
+  
+  .employee-list div {
+    margin-bottom: 5px;
+  }
+  
+  .fetchEmpButton {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #256c28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .fetchEmpButton:hover {
+    background-color: rgb(18, 192, 18); /* Set the desired hover background color */
+  }
+
+  .buttonPos{
+
+    padding-left: 2px;
+
+  }
+   .deleteButton{
+    background-color: rgb(204, 42, 42);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+  
+  }
+  .deleteButton:hover {
+    background-color: #ff0000; /* Set the desired hover background color */
+  }
+
+  .updateButton{
+    background-color: rgb(186, 186, 14);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    
+
+  }
+
+  .updateButton:hover {
+    background-color: yellow; /* Set the desired hover background color */
+  }
+  

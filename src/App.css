@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -17,13 +17,6 @@ table, th, td {
   border: 1px solid;
 }
 
-
-.container {
- 
-  margin-left: 70px;
-  width: 350px;
-  height: 200px; 
-}
 
 .App-header {
   background-color: #282c34;
