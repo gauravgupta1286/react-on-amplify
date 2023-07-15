@@ -92,9 +92,37 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    
   }
+
+  .addEmpButton:disabled {
+    background-color: #f3e5e5;
+    color: #261d1d;
+    cursor: not-allowed;
+    
+  }
+  .addEmpButton:disabled:hover {
+    background-color: #f3e5e5;
+    color: #261d1d;
+    cursor: not-allowed;
+    
+    
+  }
+
+  .addEmpButton:enabled {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #256c28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
   .addEmpButton:hover{
     background-color: rgb(18, 192, 18); /* Set the desired hover background color */
+    
   }
 
   .operation {
@@ -132,7 +160,10 @@
     width: 650px;
     border-collapse: collapse;
   }
+  
+  
 
+  
  
 
   .tableClass th:nth-child(1),
@@ -175,6 +206,7 @@
     position: sticky;
     top: 0;
     background-color: #3c81e8;
+    border: 2px solid #261d1d;
   }
   
   .employee-list div {
@@ -202,22 +234,39 @@
   }
    .deleteButton{
     
-    background-color: #ff0000; /* Set the desired hover background color */
+    background-color: yellow;  /* Set the desired hover background color */
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    color: white;
+    color: rgb(20, 1, 1);
     width: 100%;
     height: 100%;
     
   
   }
   .deleteButton:hover {
+    background-color: rgb(186, 186, 14);
+  }
+
+  .selectButton{
+    background-color:#ff0000; /* Set the desired hover background color */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color:#f2f2f2;
+    width: 100%;
+    height: 100%;
+    
+
+  }
+
+  .selectButton:hover {
     background-color: rgb(204, 42, 42);
+    
   }
 
   .updateButton{
-    background-color: yellow; /* Set the desired hover background color */
+    background-color: rgb(56, 218, 121); /* Set the desired hover background color */
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -228,7 +277,19 @@
   }
 
   .updateButton:hover {
-    background-color: rgb(186, 186, 14);
+    background-color: rgb(14, 129, 41);
     
   }
   
+  tr.highlighted {
+    color: #c30303; 
+    font-weight: bolder;
+    border: 3px solid #c30303; 
+  }
+
+  tr.unhighlighted {
+ 
+    color:black;
+    
+   
+  }
