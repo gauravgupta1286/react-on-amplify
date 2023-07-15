@@ -106,10 +106,13 @@ const selectData = ( obj, index, event) => {
   
     
 }
+
 const updateData = async(objEmp, event) => {
   console.log('emp:', objEmp.empId);
 
- 
+ if(highlightedRow==null){
+  alert('Please select any employee record first then update it. !!!');
+ }else{
   try {
       
        await axios.put('https://bbtn3h503k.execute-api.us-east-1.amazonaws.com/dev', {
@@ -135,8 +138,8 @@ alert('Employee with Empid = '+ objEmp.empId + ' has been updated Successfully.'
   fetchEmployees();
  setAddEmpDisabled(false);
  setisIdEmpDisabled(false);
- setHighlightedRow(10000);
-  
+ setHighlightedRow(null);
+ }
   
 }
 
